@@ -1,0 +1,92 @@
+body {
+    background-image: url("../../../images/ft2.jpg");
+    height: 100%;
+    max-width:100%;
+    background-position: center;
+    background-repeat:no-repeat;
+    background-size: cover;
+    margin-top: 200px;
+    
+}
+
+
+
+
+
+.frOne{
+      margin-left: 280px;
+      margin-right: 10px;
+      background-color: rgb(51, 3, 45);
+      border-radius: 5%;
+      opacity: 85%;
+      height:600px;
+      width:500px;
+      color:rgb(232, 220, 233) ;
+      font-family:cursive;
+      align-content:left ;
+      align-items: left;
+      border: 1px solid;
+      padding: 10px;
+      box-shadow: 3px 10px rgb(70, 68, 68);
+}
+.frtwo{
+    margin-left: 20px;
+    margin-right: 20px;
+    background-color: rgb(51, 3, 45);
+    border-radius: 5%;
+    height:600px;
+    opacity: 85%;
+    box-shadow: 9px darkgray;
+    width:580px;
+    color:  rgb(232, 220, 233) ;
+    font-family: cursive;
+    border: 1px solid;
+    padding: 10px;
+    box-shadow: 3px 10px rgb(70, 68, 68);
+   
+  
+}
+.buttonr{
+    background-color: rgb(2, 2, 31);
+    color: cornsilk;
+}
+
+.editfrOne{
+    margin-left: 280px;
+    margin-right: 10px;
+    background-color: rgb(235, 170, 248);
+    border-radius: 5%;
+    height:600px;
+    width:500px;
+    border-color:   3px solid rgb(68, 4, 68) ;
+    font-family:cursive;
+    align-content:left ;
+    align-items: left;
+    color: rgb(51, 3, 53);
+    border: 1px solid;
+    padding: 10px;
+    box-shadow: 3px 10px rgb(70, 68, 68);
+}
+.editfrtwo{
+  margin-left: 20px;
+  margin-right: 20px;
+  background-color: rgb(235, 170, 248);
+  border-radius: 5%;
+  height:600px;
+  width:580px;
+  border-color: solid rgb(3, 3, 37) ;
+  font-family: cursive;
+  border: 1px solid;
+  padding: 10px;
+  box-shadow: 3px 10px rgb(70, 68, 68);
+ 
+
+}
+.hp{
+
+
+    font-family: fantasy;
+    margin-left: 500px;
+    color: rgb(56, 2, 2);
+    
+}

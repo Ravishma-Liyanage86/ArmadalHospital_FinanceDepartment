@@ -1,0 +1,152 @@
+@charset "ISO-8859-1";
+
+.Msidebar{
+    height: 92%;
+        width: 200px;
+        position:absolute;
+        top: 0;
+        left: 0;
+        padding-top: 90px;
+        margin-top:20px;
+    }
+      
+      .Msidebar a {
+        padding: 16px 16px 26px 28px;
+        background-color:rgb(21, 64, 107);
+        text-decoration: none;
+        font-size: 18px;
+        color: rgb(255, 255, 255);
+        display: block;
+        border:1px solid #f7f9fa;
+        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+      
+      }
+      
+      .Msidebar a:hover {
+        color: #132f49;
+        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.28);
+      }
+    
+
+#Sidebar a {
+  position:absolute;
+  left: 0px;
+  padding: 14px;
+  width: 80px;
+  text-decoration: none;
+  border-radius:2px;
+}
+
+#Sidebar a:hover {
+  left:0;
+}
+
+#patient {
+  top: 2px;
+  background-color: #1e2b66;
+}
+
+#doctor {
+  top: 109px;
+  background-color: #2196F3;
+  background: rgba(41, 68, 107, 0.8);
+}
+
+#appointment {
+  top: 224px;
+  background-color: #2196F3;
+  background: rgba(43, 103, 192, 0.8);
+}
+
+#mStaff {
+  top: 339px;
+  background-color: #8fbafc;
+  background: rgba(224, 233, 255, 0.8);
+}
+
+#labot {
+  top: 450px;
+  background-color: #92a3d3;
+  background: rgba(47, 99, 177, 0.8);
+}
+
+#ambulance {
+  top: 564px;
+  background-color: #0e4166;
+  background: rgba(181, 184, 224, 0.8);
+}
+
+#pharmecy {
+    top: 676px;
+    background-color: #0e4166;
+  }
+
+    #pict1{
+      margin-left:102px;
+      margin-top:-60px;
+      color: #e3eeee;
+      font-size: 16px;
+      border-radius: 8px;
+      background-color: #1e2b66;;
+      padding: 16px;
+    }
+
+    #pict2{
+      margin-left:102px;
+      margin-top:70px;
+      color: #dcecec;
+      font-size: 16px;
+      border-radius: 8px;
+      background-color: rgba(41, 68, 107, 0.8);
+      padding: 16px;
+    }
+
+    #pict3{
+      margin-left:102px;
+      margin-top:10px;
+      color: #dbecec;
+      font-size: 16px;
+      border-radius: 8px;
+      background-color: rgba(43, 103, 192, 0.8);
+      padding: 16px;
+    }
+
+    #pict4{
+      margin-left:102px;
+      margin-top:10px;
+      color: #cedbdb;
+      font-size: 16px;
+      border-radius: 8px;
+      background-color: rgba(96, 111, 148, 0.8);
+      padding: 16px;
+    }
+
+    #pict5{
+      margin-left:102px;
+      margin-top:20px;
+      color: #c8dbdb;
+      font-size: 16px;
+      border-radius: 8px;
+      background-color: rgba(47, 99, 177, 0.8);
+      padding: 16px;
+    }
+
+    #pict6{
+      margin-left:102px;
+      margin-top:60px;
+      color: #ccdfdf;
+      font-size: 16px;
+      border-radius: 8px;
+      background-color:rgba(181, 184, 224, 0.8);
+      padding: 16px;
+    }
+
+    #pict7{
+      margin-left:102px;
+      margin-top:80px;
+      color: #d9ebeb;
+      font-size: 16px;
+      border-radius: 8px;
+      background-color: #0e4166;
+      padding: 16px;
+    }

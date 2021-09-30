@@ -1,0 +1,26 @@
+
+.bodyac1{
+    background-image: linear-gradient(to right, rgb(152, 173, 235),rgb(78, 93, 226),rgb(22, 163, 206),rgb(193, 201, 235),rgb(105, 159, 207),rgb(37, 167, 196),rgb(67, 128, 199)); 
+    width: auto;
+    height: auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.h3{
+    font-family:serif ;
+    font-size: 30px;
+    color: #000;
+    font-size: 600px;
+}
+.dividor{
+     border-radius: 5px;
+     background-image: linear-gradient(to right, rgb(20, 28, 97),rgb(35, 45, 131),rgb(54, 54, 189),rgb(31, 68, 230),rgb(71, 6, 250),rgb(142, 16, 245),rgb(46, 8, 68)); 
+     padding: 10px;
+     width: 45%;
+     margin-top: 1%;
+    margin-left: 25%;
+    margin-bottom: -8%;
+    border: 3px solid black;
+     opacity: 0.8;
+}

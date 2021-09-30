@@ -1,0 +1,41 @@
+@charset "ISO-8859-1";
+
+
+#mySidenav a {
+  position:fixed;
+  right: -20px;
+  transition: 0.3s;
+  padding: 15px;
+  width: 40px;
+  text-decoration: none;
+  border-radius:5px;
+}
+
+#mySidenav a:hover {
+  right:0;
+}
+
+#whatsap {
+  top: 260px;
+  background-color: #119464;
+}
+
+#tegrm {
+  top: 320px;
+  background-color: #2196F3;
+}
+
+#wibr {
+  top: 380px;
+  background-color: #8080ff;
+}
+
+#ct {
+  top: 440px;
+  background-color: #ca0f59;
+}
+
+#skp {
+  top: 500px;
+  background-color: #0e4166;
+}

@@ -1,0 +1,139 @@
+/*main topic*/
+
+#maintp {
+    font-style: italic;
+    font-size: 40px;
+    font-family: "Arial Black", Gadget, sans-serif;
+    color: #401331;
+    text-align: center;
+    margin-top: 10px;
+}
+
+#welcome{
+	text-align: center;
+	font-size: 35px;
+	font-family:fantasy;
+	color:#020f16;
+	margin-left:100px;
+    margin-top: 50px;
+	
+}
+/* styling table */
+
+.tbl {
+    width: 800px;
+    height: 300px;
+    margin-left: 500px;
+    margin-right: 100px;
+    margin-top: 50px;
+    margin-bottom: 5px;
+    padding: 30px;
+    padding-left: 20px;
+    background-color:#73f17a;
+    opacity:0.8;
+    position: center;
+    border-color: #040503;
+    border-style: solid;
+    border-width: 3px;
+}
+
+
+/* styling table data */
+
+#top {
+    font-size: 40px;
+    color: #0b2438;;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 10px;
+}
+
+#tk {
+    font-size: 35px;
+    color: #280CF4;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 5px;
+}
+
+.stp {
+    font-size: 20px;
+    color: #cc0fdd;
+    font-family: Georgia, serif;
+    text-align: left;
+    font-family: cursive;
+}
+
+
+/* styling paragraphs */
+
+.para {
+    font-size: 15px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #470953;
+    text-align: left;
+}
+
+
+
+/* styling back button */
+
+.backbtn {
+    background: #331400;
+    color: #ffdd99;
+    font-style: italic;
+    font-size: 20px;
+    box-shadow: 0 9px#8EA78F;
+    border: black;
+    border-width: 2px solid;
+    border-radius: 40%;
+    margin-top:10px;
+    padding: 5px;
+    margin-left: 500px;
+    text-align: center;
+    width: 400px;
+    height: 50px;
+}
+
+.backbtn:active {
+    background-color: #fff3e6;
+    color:red;
+    box-shadow: 0 5px rgb(32, 31, 31);
+    transform: translateY(4px);
+}
+/*styling side bar*/
+#mySidenav a {
+  position:fixed;
+  right: -20px;
+  transition: 0.3s;
+  padding: 15px;
+  width: 40px;
+  text-decoration: none;
+  border-radius:5px;
+}
+#mySidenav a:hover {
+  right:0;
+}
+
+#whatsap {
+  top: 260px;
+  background-color: #04AA6D;
+}
+
+#tegrm {
+  top: 320px;
+  background-color: #2196F3;
+}
+
+#wibr {
+  top: 380px;
+  background-color: #8080ff;
+}
+
+#ct {
+  top: 440px;
+  background-color: #ca0f59
+}
+
+#skp {
+  top: 500px;
+  background-color: #6cb4e8
+}
