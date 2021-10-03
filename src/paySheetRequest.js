@@ -5,7 +5,8 @@ import axios from 'axios';
 import swal from 'sweetalert';
 import './validation';
 
-<script></script>
+
+
 class PaySheetRequest extends Component {
 
     state = {
@@ -18,6 +19,22 @@ class PaySheetRequest extends Component {
         time: '',
         redate: '',
         error_list:[],
+    }
+     validateNIC = (e) =>{
+        var nic = document.getElementById('nic');
+        var msg = document.getElementById('msg');
+    
+        if (nic.value.length == 10) {
+          
+            msg.innerHTML = "N.I.C. length is valid";
+            msg.style.color = "#350D7C";
+        } else if(nic.value.length == 12){
+            msg.innerHTML = "N.I.C. length is valid";
+            msg.style.color = "#350D7C";
+        }else{
+            msg.innerHTML = "N.I.C. must be 10 or 12 characters";
+            msg.style.color = "#F10707";
+        }
     }
     handleInput = (e) => {
         
@@ -101,8 +118,10 @@ class PaySheetRequest extends Component {
                         
 
                                         <label className="labelsreg12">Your NIC  :</label>
-                                        <input type="text" name="nic" id="nic" onChange={this.handleInput} value={this.state.nic} onkeyup="validateNIC();" className="form-control" placeholder="nic" />
+                                        <input type="text" name="nic" id="nic" onChange={this.handleInput} value={this.state.nic} onKeyUp={this.validateNIC} className="form-control" placeholder="nic" />
+                                        <span id="msg"></span>
                                         <span className="text-danger">{this.state.error_list.nic}</span>
+                                       
 
 
                                         <label className="labelsreg12">Your Employee ID :</label>

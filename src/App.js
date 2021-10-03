@@ -25,6 +25,7 @@ import logo from './images/arm-logo.jpeg';
 import './assets/Accountants/js/scripts';
 //import hospital from './images/hospital-bc.jpg.crdownload'
 import SearchPaySheet from './SerachPaysheet';
+import  Employees from './Employees';
 import Contact from "./contact.js";
 import Feed from "./feed.js";
 import Benifits from "./benifits";
@@ -99,6 +100,9 @@ function App() {
                
               <Route path="/FinanceStaff">
                 <FinanceStaff />
+              </Route>
+              <Route path="/Employees">
+                <Employees />
               </Route>
               <Route path="/SerachPaysheet" component={SearchPaySheet}>
                 

@@ -28,6 +28,7 @@ class AddSalaryProcedure extends Component {
         error_list:[],
 
     }
+    
     handleInput = (e) => {
         this.setState({
 
