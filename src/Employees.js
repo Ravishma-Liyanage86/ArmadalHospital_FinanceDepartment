@@ -5,14 +5,14 @@ import './assets/Accountants/css/addSal.css';
 import Spinner from 'react-bootstrap/Spinner';
 import swal from 'sweetalert';
 import Table from 'react-bootstrap/Table';
-
-
+import ReactHTMLTableToExcel from 'react-html-table-to-excel';
+import Sidebar from './layouts/accountant/sidebar';
 class Employees extends Component {
 
     state = {
-        viewEmployees:[],
-        loading:true,
-            
+        viewEmployees: [],
+        loading: true,
+
 
     }
 
@@ -20,47 +20,44 @@ class Employees extends Component {
         const res = await axios.get('http://localhost:8000/api/viewEmployees');
         // console.log(res);
 
-           if(res.data.status === 200)
-           {
-                     this.setState({
-                        viewEmployees:res.data.viewEmployees,
-                        loading:false,
+        if (res.data.status === 200) {
+            this.setState({
+                viewEmployees: res.data.viewEmployees,
+                loading: false,
 
-                     });
-           }
+            });
+        }
 
     }
 
-   
+
 
     render() {
-           
-        var request_TABLE = "";
-        if(this.state.loading)
-        {
 
-            request_TABLE = <tr><td  colSpan="17"><h2><Spinner animation="border" variant="primary" />Loading...</h2></td></tr>
+        var request_TABLE = "";
+        if (this.state.loading) {
+
+            request_TABLE = <tr><td colSpan="17"><h2><Spinner animation="border" variant="primary" />Loading...</h2></td></tr>
         }
-        else
-        {
+        else {
 
             request_TABLE =
-            this.state.viewEmployees.map( (item) => { 
+                this.state.viewEmployees.map((item) => {
 
-                return(
+                    return (
 
-                   <tr key={item.id}>
-                       <td>{item.id}</td>
-                       <td>{item.name}</td>
-                       <td>{item.phone}</td>
-                       <td>{item.stafftype}</td>
-                       <td>{item.email}</td>
-                       
-                       
-                   </tr>
+                        <tr key={item.id}>
+                            <td>{item.id}</td>
+                            <td>{item.name}</td>
+                            <td>{item.phone}</td>
+                            <td>{item.stafftype}</td>
+                            <td>{item.email}</td>
 
-                );
-            });
+
+                        </tr>
+
+                    );
+                });
 
         }
 
@@ -69,7 +66,8 @@ class Employees extends Component {
 
 
 
-            <div  className="view">
+            <div className="view">
+                <Sidebar />
                 <div className="container">
                     <h1 className="hp"> Finance Staff       <button className="btn btn-warning btn-md float-end">   <Link to={"/FinanceStaff"}><i className="bar1"> <p>Back</p></i></Link></button></h1>
                     <div className="row">
@@ -77,13 +75,13 @@ class Employees extends Component {
                             <div className="card">
                                 <div className="card-header">
                                     <h4>All employees of Armadal Hospital
-                                        <br/>
-                                     
+                                        <br />
+
                                     </h4>
 
                                 </div>
                                 <div className="card-body">
-                                    <table className="table table-bordered table-striped " >
+                                    <table id="employeeList" className="table table-bordered table-striped " >
                                         <thead>
                                             <tr>
                                                 <th>Employee ID </th>
@@ -91,16 +89,27 @@ class Employees extends Component {
                                                 <th>Phone number </th>
                                                 <th>Staff Category </th>
                                                 <th>Email address</th>
-                                                
-                                                
+
+
 
 
                                             </tr>
                                         </thead>
                                         <tbody>
-                                            {request_TABLE}    
+                                            {request_TABLE}
                                         </tbody>
                                     </table>
+
+
+                                    <br/>
+                                    <br/>
+                                    <ReactHTMLTableToExcel
+                                        id="serchBTn"
+                                        className="btn btn-info btn-sm"
+                                        table="employeeList"
+                                        filename="EmployeeListxl"
+                                        sheet="sheet"
+                                        buttonText="Download as excel sheet" />
 
                                 </div>
 

@@ -100,10 +100,10 @@
     background-color: rgb(248, 245, 78);
     border-radius: 5%;
     opacity: 85%;
-    height:700px;
+    height:800px;
     width:500px;
     color:rgb(3, 0, 8) ;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family:cursive;
     align-content:left ;
     align-items: left;
     border: 1px solid;
@@ -174,4 +174,34 @@
     background-color: blueviolet;
     color: darkred;
     margin-bottom: 40px;
+}
+.CalApp{
+    background-color: rgb(195, 150, 236);
+    width:600px;
+    height:800px;
+    margin-left: 500px;
+    border: 2px #CCC solid;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.CalHeading{
+    text-align: center;
+    color: indigo;
+}
+.ETableCellText{
+    background-color: green;
+    color: white !important;
+    font-size: 16px!important;
+}
+.ETableCellValt{
+    text-align: right !important;
+    font-size: 18px!important;
+}
+.tre{
+     margin-bottom: 20px;
+     height: 500px;
+     width:500px;
+     margin-left: 20px;
+     background-color: ivory;
+     margin-top: 10px;
 }

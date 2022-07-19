@@ -1,5 +1,5 @@
 import Menubar from './menubar'
-
+import Sidebar from './layouts/accountant/sidebar';
 
 function FinanceHome()
 {
@@ -7,6 +7,7 @@ function FinanceHome()
            <div>
                <h1 className= "he1">Welcome to Finance Department </h1>
               < Menubar/>
+              <Sidebar/>
            </div>
        )
 

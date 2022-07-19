@@ -4,7 +4,7 @@ import axios from 'axios';
 import swal from 'sweetalert';
 import './assets/Accountants/css/addSal.css'
 import bh from'./images/ft7.jpg';
-
+import Sidebar from './layouts/accountant/sidebar';
 class AddSalaryProcedure extends Component {
 
     state = {
@@ -88,7 +88,7 @@ class AddSalaryProcedure extends Component {
     render() {
         return (
             <div className="container">
-
+                <Sidebar />
                 <h4 className="text-center">Payment calculation procedure of the staff</h4>
                 <br/>
                 <button className="btn btn-warning btn-md float-end">   <Link to={"/FinanceStaff"}><i className="bar1"> Back</i></Link></button>
@@ -279,7 +279,7 @@ class AddSalaryProcedure extends Component {
                                         <div className="text-center">
                                             <button type="submit" className="buttonr">Create the payment procedure</button>
                                         </div>
-
+                                      <br/>
                                     </div>
 
 

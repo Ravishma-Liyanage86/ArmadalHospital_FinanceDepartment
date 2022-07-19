@@ -8,6 +8,7 @@ import MedicalStaff from "./images/MedicalStaff.png";
 import Labot from "./images/Labot.png";
 import Ambulance from "./images/Ambulance.png";
 import Pharmecy from "./images/Pharmecy.png";
+import Financial from "./images/foms.jpg";
 
 function Menubar(){
 
@@ -32,7 +33,7 @@ function Menubar(){
         <a to="/" id="labot"><img src={Labot} width="40" height="80"/></a>
         <a to="" id="ambulance"><img src={Ambulance} width="40" height="80"/></a>
         <a to="" id="pharmecy"><img src={Pharmecy} width="40" height="80"/></a>
-        <a to={"/FinanceHome"} id="pharmecy"><img src={Pharmecy} width="40" height="80"/></a>
+        <Link to={"/FinanceStaff"}><img src={Financial} width="40" height="80"/></Link> 
          
       </div>
      </div>

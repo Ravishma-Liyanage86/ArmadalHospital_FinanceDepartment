@@ -16,7 +16,7 @@ import PaySheetRequest from './paySheetRequest';
 import FinanceStaff from './FinanceStaff';
 import React from 'react';
 import Terms from './Terms';
-import Sidebar from './layouts/accountant/sidebar';
+import Menubar from './menubar'
 import Home from './Home';
 import Privacy from './Privacy';
 import Footer from './layouts/accountant/footer';
@@ -30,7 +30,7 @@ import Contact from "./contact.js";
 import Feed from "./feed.js";
 import Benifits from "./benifits";
 import Hidebar from "./Hidebar"
-
+import SalaryAdvances from "./SalaryAdvances"
 function App() {
   return (
     <div className="App">
@@ -90,7 +90,7 @@ function App() {
 
 
                 <br/>
-              <Sidebar />
+                < Menubar/>
               <Route path="/FinanceHome">
                 <FinanceHome />
               </Route>
@@ -103,6 +103,9 @@ function App() {
               </Route>
               <Route path="/Employees">
                 <Employees />
+              </Route>
+              <Route path="/SalaryAdvances">
+                <SalaryAdvances />
               </Route>
               <Route path="/SerachPaysheet" component={SearchPaySheet}>
                 

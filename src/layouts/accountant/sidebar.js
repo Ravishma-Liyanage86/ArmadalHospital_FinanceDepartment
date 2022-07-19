@@ -21,7 +21,7 @@ const Sidebar = () => {
                     <Link to={"/paySheetRequest"}><i className="bar1">Request for Pay Sheet</i></Link>
                     <Link to={"/SerachPaysheet"}><i className="bar1">View Pay Sheet</i></Link>
                     <Link to={"/Employees"}><i className="bar1">View Employees</i></Link>
-                    <Link to="#services"><i className="bar1">Salary Advances</i></Link>
+                    <Link to={"/SalaryAdvances"}><i className="bar1">Salary Advances</i></Link>
                     <Link to={"/FinanceStaff"}><i className="bar1">Finance Staff</i></Link>
                     <Link to="#services"><i className="bar1">Issues about Pay Sheet</i></Link>
                     <br /><br /><br /><br /><br /><br />

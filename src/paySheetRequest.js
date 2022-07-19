@@ -4,7 +4,7 @@ import React, { Component } from 'react';
 import axios from 'axios';
 import swal from 'sweetalert';
 import './validation';
-
+import Sidebar from './layouts/accountant/sidebar';
 
 
 class PaySheetRequest extends Component {
@@ -82,6 +82,7 @@ class PaySheetRequest extends Component {
     render() {
         return (
             <div className="container">
+                 <Sidebar />
 
                 <h1 className="h1"> The requst form to view the monthly Pay Sheet</h1>
                 <form onSubmit={this.saveRequest}>

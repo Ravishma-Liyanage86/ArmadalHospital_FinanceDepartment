@@ -10,6 +10,7 @@ import logo from './images/arm-logo.jpeg';
 import ReactHTMLTableToExcel from 'react-html-table-to-excel';
 import autoTable from 'jspdf-autotable'
 import user from './images/user.png';
+import Sidebar from './layouts/accountant/sidebar';
 function pdfGenerate() {
 
     var doc = new jsPDF('landscape', 'px', 'a4', 'false');
@@ -85,6 +86,7 @@ function SearchPaySheet() {
     return (
 
         <div className="container">
+            <Sidebar/>
             <div className="col-md-6">
                 <div className="jk">
                     <h1>Search Your Paysheet</h1>

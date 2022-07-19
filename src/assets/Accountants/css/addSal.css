@@ -19,7 +19,7 @@ body {
       background-color: rgb(51, 3, 45);
       border-radius: 5%;
       opacity: 85%;
-      height:600px;
+      height:610px;
       width:500px;
       color:rgb(232, 220, 233) ;
       font-family:cursive;
@@ -34,7 +34,7 @@ body {
     margin-right: 20px;
     background-color: rgb(51, 3, 45);
     border-radius: 5%;
-    height:600px;
+    height:610px;
     opacity: 85%;
     box-shadow: 9px darkgray;
     width:580px;
@@ -49,6 +49,8 @@ body {
 .buttonr{
     background-color: rgb(2, 2, 31);
     color: cornsilk;
+    margin-bottom: 10px;
+    margin-top: 5px;
 }
 
 .editfrOne{

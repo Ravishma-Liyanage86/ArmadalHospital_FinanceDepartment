@@ -5,7 +5,7 @@ import './assets/Accountants/css/addSal.css';
 import Spinner from 'react-bootstrap/Spinner';
 import swal from 'sweetalert';
 import Table from 'react-bootstrap/Table';
-
+import Sidebar from './layouts/accountant/sidebar';
 
 class ViewPaySheetRequest extends Component {
 
@@ -80,6 +80,7 @@ class ViewPaySheetRequest extends Component {
 
 
             <div  className="view">
+                <Sidebar />
                 <div className="container">
                     <h1 className="hp"> Finance Staff       <button className="btn btn-warning btn-md float-end">   <Link to={"/FinanceStaff"}><i className="bar1"> <p>Back</p></i></Link></button></h1>
                     <div className="row">
