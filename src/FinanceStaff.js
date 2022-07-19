@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import './assets/Accountants/css/FinanceStaff.css';
 import Spinner from 'react-bootstrap/Spinner';
 import ProgressBar from 'react-bootstrap/ProgressBar'
-
+import Sidebar from './layouts/accountant/sidebar';
 class FinanceStaff extends Component {
     render() {
 
@@ -12,7 +12,7 @@ class FinanceStaff extends Component {
 
             <div>
 
-
+             <Sidebar/>
 
                 <h1 className="h1"> Finance Staff</h1>
 
