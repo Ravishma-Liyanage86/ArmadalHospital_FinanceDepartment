@@ -7,7 +7,7 @@ import swal from 'sweetalert';
 import jsPDF from 'jspdf';
 import logo from './images/arm-logo.jpeg';
 import user from './images/user.png';
-
+import Sidebar from './layouts/accountant/sidebar';
 class PaySheetRequest extends Component {
 
     state = {
@@ -24,6 +24,22 @@ class PaySheetRequest extends Component {
         channelcharges: '',
         total: '',
         padate: '',
+    }
+    validateNIC = (e) =>{
+        var nic = document.getElementById('nic');
+        var msg = document.getElementById('msg');
+    
+        if (nic.value.length == 10) {
+          
+            msg.innerHTML = "N.I.C. length is valid";
+            msg.style.color = "#350D7C";
+        } else if(nic.value.length == 12){
+            msg.innerHTML = "N.I.C. length is valid";
+            msg.style.color = "#350D7C";
+        }else{
+            msg.innerHTML = "N.I.C. must be 10 or 12 characters";
+            msg.style.color = "#F10707";
+        }
     }
     handleInput = (e) => {
         this.setState({
@@ -165,6 +181,7 @@ class PaySheetRequest extends Component {
         return (
             
             <div className="container"> 
+            <Sidebar />
             
                                 <h1 className="h1"> Add the pay sheet</h1>
                                 <br/>
@@ -192,8 +209,8 @@ class PaySheetRequest extends Component {
                                             <input type="text" id="name" name="ename" onChange={this.handleInput} value={this.state.ename} className="form-control " placeholder="full name" />
                                              
                                             <label className="labelsreg1">Employees' NIC number :</label>
-                                            <input type="text" id="nic" name="nic" onChange={this.handleInput} value={this.state.nic} className="form-control " placeholder="NICnumber" />
-                                             
+                                            <input type="text" id="nic" onKeyUp={this.validateNIC} name="nic" onChange={this.handleInput} value={this.state.nic} className="form-control " placeholder="NICnumber" />
+                                            <span id="msg"></span> 
                                             {/* <input type="text" name="select" onChange={this.handleInput} value={this.state.select} className="form-control" aria-label=".form-select-sm example"/> */}
                                             {/* <option selected>Select</option>
                                                 <option value="1">Nurses</option>

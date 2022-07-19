@@ -4,6 +4,7 @@ import axios from 'axios';
 import swal from 'sweetalert';
 import './assets/Accountants/css/addSal.css';
 import { useParams } from "react-router-dom";
+import Sidebar from './layouts/accountant/sidebar';
 
 
 
@@ -157,6 +158,7 @@ class EditProcedure extends Component {
     render() {
         return (
             <div className="container">
+                <Sidebar />
 
                 <h4 className="text-center">Edit Payment calculation prosedure of the staff</h4>
                 {/* {
@@ -210,6 +212,7 @@ class EditProcedure extends Component {
                                             </div>
                                         </div>
                                         <br />
+                                            
 
                                         <div className="form-group row">
                                             <label className="col-sm-4 col-form-label">Number of hours should be considered as Working hours</label>
